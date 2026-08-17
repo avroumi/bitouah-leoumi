@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complain</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-title">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJW-1DPW3-Qq69N7kG-DM0t0lwPsx9bwUoHjEi3UMeXrhYuhWsenrVQPE&s=10"
+          alt="bitouah leoumi logo"
+          class="img-btl"
+        />
+        <article class="header-description">
+          <h1 class="title">Bitouah Leoumi</h1>
+          <p class="description">
+            By your side for the important things in life
+          </p>
+        </article>
+      </div>
+      <nav class="navbar">
+        <a href="./index.html" class="link">Complain diary</a>
+        <a href="./complain.html" class="link active">File a new complain</a>
+      </nav>
+    </header>
+    <main>
+      <div class="emplacement"><h4>home page/complain diary</h4></div>
+      <div class="first-part">
+        <article class="hero">
+          <h5>Personnal place</h5>
+          <p>Complain diary citoyen</p>
+          <h6>Bitouah leoumi by your side for the important things in life</h6>
+        </article>
+
+        <a href="./complain.html" class="link">File a new complain</a>
+      </div>
+      <div class="second-part">
+        <span class="info">i</span>
+        <article class="second-part-information">
+          <h4>Important to know</h4>
+          <p>this plaint not considering and anyone can't care of you</p>
+        </article>
+      </div>
+      <form action="" id="form" class="complaint">
+        <article class="complaint-headers">
+          <article class="header-introduction">
+            <p class="privet">privet info</p>
+            <h3>Fail out complaint</h3>
+          </article>
+          <p class="obligatory">* obligatory champs</p>
+        </article>
+        <article class="table-complaint">
+          <article class="table-name">
+            <label for="#name" class="label-name">Your name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Avroumiiiii"
+            />
+          </article>
+          <article class="two">
+            <section class="topics">
+              <p>Choose your topic</p>
+              <select name="topics" id="topics" class="topics">
+                <option value="food">Food</option>
+                <option value="complaint">complaint</option>
+                <option value="reclamation">Reclamation</option>
+                <option value="other">Other</option>
+              </select>
+            </section>
+            <section class="urgencys">
+              <p>your level of urgency</p>
+              <select name="urgency" id="urgency">
+                <option value="low">Low</option>
+                <option value="middle">Middle</option>
+                <option value="hard">Hard</option>
+              </select>
+            </section>
+          </article>
+        </article>
+        <article class="text-area">
+          <label for="#txt-area">Enter your complaint</label>
+          <textarea
+            name="complain-txt"
+            id="txt-area"
+            rows="6"
+            placeholder="Write your message"
+          ></textarea>
+        </article>
+
+        <article class="btn-complain">
+          <button type="submit" class="submit">Send complaint</button>
+          <button type="reset" class="reset-btn">Reset and comeback</button>
+        </article>
+      </form>
+    </main>
+    <footer>
+      <article class="footer">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJW-1DPW3-Qq69N7kG-DM0t0lwPsx9bwUoHjEi3UMeXrhYuhWsenrVQPE&s=10"
+          alt="bitouah leoumi logo"
+          class="img-btl"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nesciunt
+          vero, exercitationem aliquam, nihil pariatur vitae natus mollitia
+          doloremque recusandae officia ad quaerat culpa magni accusamus aperiam
+          ab hic maiores.
+        </p>
+        <a href="./complain.html" class="link">File a new complain</a>
+      </article>
+    </footer>
+    <script src="container.js"></script>
+  </body>
+</html>
