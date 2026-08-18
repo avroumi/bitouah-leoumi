@@ -220,13 +220,16 @@ padding: 10px;
     color: var(--secondary-color);
 }
 
-.table-th,.info-table{
+.table-th{
     display: grid;
     grid-template-columns: repeat(7,1fr);
     gap:3px;
     padding: 4px
 }
 
+.info-table{
+    width: 100%;
+}
 .table-th{
     background-color: var(--background-color);
     border: 1px solid var(--second-text-color);
@@ -351,4 +354,19 @@ input,select,textarea{
     border: 1px solid var(--second-text-color);
     border-radius: 6px;
     padding: 6px 2px;
+}
+
+.table-th,
+.complaint-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3px;
+  padding: 8px;
+}
+.complaint-row {
+  border-bottom: 1px solid var(--second-text-color);
+}
+.complaint-row article,
+.table-th article {
+  padding: 6px;
 }

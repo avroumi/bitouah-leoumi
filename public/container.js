@@ -5,12 +5,13 @@ const urgencySelect = document.querySelector("#urgency");
 const complaintTextarea = document.querySelector("#txt-area");
 
 let id = 0;
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const name = nameInput.value.trim();
-  const topic = topicsSelect.value.trim();
-  const urgency = urgencySelect.value.trim();
+  const topic = topicsSelect.value;
+  const urgency = urgencySelect.value;
   const textArea = complaintTextarea.value.trim();
 
   const complaint = {
@@ -22,10 +23,12 @@ form.addEventListener("submit", (e) => {
     date: new Date(),
     status: "pending",
   };
-  const itemJson = localStorage.getItem("complaints") ?? "[]";
-  const complaints = JSON.parse(itemJson);
+
+  const complaints = JSON.parse(localStorage.getItem("complaints") ?? "[]");
 
   complaints.push(complaint);
 
   localStorage.setItem("complaints", JSON.stringify(complaints));
+
+  renderComplaints(complaints);
 });
